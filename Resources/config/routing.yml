@@ -1,0 +1,22 @@
+faq_question_list:
+    path: /
+    defaults:
+        _controller: FaqBundle:Faq:list
+        category_id: null
+    methods: [ GET, POST ]
+
+faq_category_view:
+    path: /{category_id}
+    defaults:
+        _controller: FaqBundle:Faq:list
+    requirements:
+        category_id: \d+
+    methods: [ GET, POST ]
+
+faq_question_view:
+    path: /question/{id}
+    defaults:
+        _controller: FaqBundle:Faq:view
+    methods: [ GET, POST ]
+    requirements:
+        id: \d+

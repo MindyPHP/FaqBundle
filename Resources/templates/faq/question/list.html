@@ -1,0 +1,31 @@
+{% extends "faq/base.html" %}
+
+{% block breadcrumbs %}
+    {% set breadcrumbs = [
+    ['name' => 'Вопрос-ответ']
+    ] %}
+    {% parent %}
+{% endblock %}
+
+{% block content %}
+    <div class="b-wrapper">
+        <div class="b-row">
+            <div class="b-col b-col_small_12 b-col_large_8">
+                <h1 class="b-heading">Вопрос-ответ</h1>
+
+                {% for question in questions %}
+                    {% include "faq/question/_question.html" with ['question' => question] %}
+                {% endfor %}
+
+                {{ pagination_render(pager)|safe }}
+            </div>
+            <div class="b-col b-col_small_12 b-col_large_4">
+                <div class="b-hide b-hide_large_up">
+                    <div class="b-divider"></div>
+                </div>
+                <h2 class="b-heading">Задать вопрос</h2>
+                {{ form_render(form)|safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

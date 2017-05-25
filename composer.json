@@ -1,0 +1,31 @@
+{
+    "name": "mindy/faq-bundle",
+    "description": "FaqBundle",
+    "type": "mindy-bundle",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mindy\\Bundle\\FaqBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Maksim Falaleev",
+            "email": "max@studio107.ru"
+        }
+    ],
+    "require": {
+        "mindy/rating-bundle": "~1.0",
+        "mindy/comment-bundle": "~1.0",
+        "mindy/orm-bundle": "~3.0",
+        "mindy/form-bundle": "~3.0",
+        "mindy/mail-bundle": "~3.0",
+        "mindy/template-bundle": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    }
+}

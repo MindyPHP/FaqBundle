@@ -1,0 +1,11 @@
+{% extends "mail/template.html" %}
+
+{% block content %}
+    <h1>Новый вопрос на сайте</h1>
+    <p>Имя: {{ question.name }}</p>
+    <p>Телефон: {{ question.phone }}</p>
+    <p>Электронная почта: {{ question.email }}</p>
+    <p>Дата и время запроса: {{ question.created_at }}</p>
+    <p>Категория: {{ question.category }}</p>
+    <p>Вопрос: {{ question.question }}</p>
+{% endblock %}

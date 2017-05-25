@@ -1,0 +1,38 @@
+parameters:
+    mindy.faq.managers: %managers%
+
+services:
+    mindy.bundle.faq.admin.category:
+        class: Mindy\Bundle\FaqBundle\Admin\CategoryAdmin
+        tags:
+            - { name: admin.admin, slug: faq_category }
+
+    mindy.bundle.faq.admin.question:
+        class: Mindy\Bundle\FaqBundle\Admin\QuestionAdmin
+        tags:
+            - { name: admin.admin, slug: faq_question }
+
+    mindy.bundle.faq.template_library.faq:
+        class: Mindy\Bundle\FaqBundle\Library\FaqLibrary
+        tags:
+            - { name: template.library }
+
+    mindy.bundle.faq.event_listener.faq:
+        class: Mindy\Bundle\FaqBundle\EventListener\FaqListener
+        arguments:
+            - '%mindy.faq.managers%'
+            - '@mindy.bundle.mail.helper.mail'
+            - '@router'
+        tags:
+            - { name: kernel.event_listener, event: faq.question, method: onQuestion }
+            - { name: kernel.event_listener, event: faq.question_answer, method: onAnswer }
+
+    mindy.bundle.faq.sitemap.category:
+        class: Mindy\Bundle\FaqBundle\Sitemap\CategorySitemapProvider
+        tags:
+            - { name: sitemap.provider }
+
+    mindy.bundle.faq.sitemap.question:
+        class: Mindy\Bundle\FaqBundle\Sitemap\QuestionSitemapProvider
+        tags:
+            - { name: sitemap.provider }
