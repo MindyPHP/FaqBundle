@@ -1,16 +1,16 @@
-# Review Bundle
+# Faq Bundle
 
-[![Build Status](https://travis-ci.org/MindyPHP/ReviewBundle.svg?branch=master)](https://travis-ci.org/MindyPHP/ReviewBundle)
-[![Coverage Status](https://img.shields.io/coveralls/MindyPHP/ReviewBundle.svg)](https://coveralls.io/r/MindyPHP/ReviewBundle)
-[![Latest Stable Version](https://poser.pugx.org/mindy/review-bundle/v/stable.svg)](https://packagist.org/packages/mindy/review-bundle)
-[![Total Downloads](https://poser.pugx.org/mindy/review-bundle/downloads.svg)](https://packagist.org/packages/mindy/review-bundle)
+[![Build Status](https://travis-ci.org/MindyPHP/FaqBundle.svg?branch=master)](https://travis-ci.org/MindyPHP/FaqBundle)
+[![Coverage Status](https://img.shields.io/coveralls/MindyPHP/FaqBundle.svg)](https://coveralls.io/r/MindyPHP/FaqBundle)
+[![Latest Stable Version](https://poser.pugx.org/mindy/faq-bundle/v/stable.svg)](https://packagist.org/packages/mindy/faq-bundle)
+[![Total Downloads](https://poser.pugx.org/mindy/faq-bundle/downloads.svg)](https://packagist.org/packages/mindy/faq-bundle)
 
-The Review Bundle
+The Faq Bundle
 
 Resources
 ---------
 
-  * [Documentation](https://mindy-cms.com/doc/current/bundles/review/index.html)
+  * [Documentation](https://mindy-cms.com/doc/current/bundles/faq/index.html)
   * [Contributing](https://mindy-cms.com/doc/current/contributing/index.html)
   * [Report issues](https://github.com/MindyPHP/mindy/issues) and
     [send Pull Requests](https://github.com/MindyPHP/mindy/pulls)
